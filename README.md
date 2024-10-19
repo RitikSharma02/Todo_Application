@@ -22,3 +22,10 @@ Dart: The programming language used for app development.
 sqflite: For local data storage and retrieval.
 GetX: For state management and dependency injection.
 Local Notifications: To set reminders for tasks.
+
+.....
+.
+.
+.
+.....
+
