@@ -34,7 +34,7 @@ class TaskTile extends StatelessWidget {
                 Text(
                   task?.title ?? "",
                   style: GoogleFonts.lato(
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,

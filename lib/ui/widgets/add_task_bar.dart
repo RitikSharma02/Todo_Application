@@ -162,7 +162,8 @@ setState(() {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   _colorPalette(),
-                  MyButton(label: 'Create Task', onTap:()=> _validateData(),)
+                  MyButton(label:
+                  widget.task!=null? 'Edit Task': 'Create Task', onTap:()=> _validateData(),)
                 ],
               )
 

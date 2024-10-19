@@ -35,7 +35,6 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     notifyHelper = NotifyHelper();
     _initializeNotifications();
-
   }
 
 
@@ -151,7 +150,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-
   _showTasks() {
     return Expanded(
       child: Obx(() {
@@ -235,6 +233,7 @@ Spacer(),
         _bottomSheetButton(label: "Delete Task",
 onTap: (){
   _taskController.delete(task);
+  Get.back();
 },
 
 
@@ -369,12 +368,9 @@ decoration: BoxDecoration(
             title: 'Theme Changed',
             body: Get.isDarkMode ? "Light theme Activated" : "Dark theme Activated",
           );
-
-
          // notifyHelper.scheduledNotification(title: 'scheduled hun beta', body: 'hahahha working');
          //
          // notifyHelper.zonedScheduleAlarmClockNotification(title: 'zone scheduled hun beta', body: 'hahahha working');
-
         },
         child: Icon(Get.isDarkMode? Icons.sunny: Icons.nightlight_round, size: 20,color:
 

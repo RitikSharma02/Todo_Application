@@ -72,6 +72,7 @@ class TaskController extends GetxController {
   void delete(Task task) {
     DBHelper.delete(task);
     getTasks();
+
   }
 
   // Mark a task as completed
